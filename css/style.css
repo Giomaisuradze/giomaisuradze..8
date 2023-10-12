@@ -1,0 +1,65 @@
+.birdd{
+ width: 100px;
+ height: 100px;
+ animation-name: bird-move;
+ animation-duration: 4s;
+ animation-delay: 3s;
+ animation-iteration-count: 3;
+ position: absolute;
+}
+.bg-img{
+background-image: url(../img/cityimage.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 750px;
+width: 100%;
+position: relative;
+}
+
+@keyframes bird-move{
+    from{left: 0px;}
+    to{left: 500px;}
+}
+@keyframes girl-move{
+    from{left: 0px;}
+    to{left: 1000px}
+}
+.girl{
+    width: 200px;
+    height: 200px;
+    animation-name: girl-move;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    position: absolute;
+    bottom: 190px;
+}
+.car{
+    width: 300px;
+    height: 200px;
+    animation-name: car-move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    position: absolute;
+    bottom: 0px; 
+}
+@keyframes car-move{
+    from{left: 0;}
+    to{left: 1000px;}
+}
+.boy{
+    width: 200px;
+    height: 200px;
+    animation-name: boy-move;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    position: absolute;
+    bottom: 190px;
+    right: 1px;
+}
+@keyframes boy-move{
+    from{right: 0;}
+    to{right: 1000px;}
+}
